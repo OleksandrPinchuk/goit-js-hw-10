@@ -40,7 +40,7 @@ function murkupCountry(data) {
 function markupCountryList(data) {
     const markupListEl = data.map(country => {
         return `<li>
-                    <img class="country-list__flag" src="${country.flags.svg}" alt="${country.flags.alt}" width="60px">
+                    <img class="country-list__flag" src="${country.flags.svg}" alt="${country.flags.alt}" width="120px">
                     <p class="country-list__name">${country.name.official}</p>
                 </li>`;
     }).join('');
@@ -50,7 +50,7 @@ function markupCountryList(data) {
 function markupFoundCountry(data) {
     const markupCountryInfo = data.map(item => {
         return`<div class="country-wraper">
-                    <img class="country-info__flag" src="${item.flags.svg}" alt="${item.flags.alt}" width="60px" >
+                    <img class="country-info__flag" src="${item.flags.svg}" alt="${item.flags.alt}" width="120px" >
                     <p class="country-info__name">${item.name.official}</p>
                 </div>
                 <ul>
